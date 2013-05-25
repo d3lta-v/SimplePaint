@@ -22,8 +22,8 @@
     [super viewDidLoad];
     nestedView.backgroundColor=[UIColor colorWithWhite:0 alpha:0]; //This is to make the nested view transparent
 
-    SPView *paint = [[SPView alloc] initWithFrame:self.view.bounds]; //original code is SPView *paint=[[SPView alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:paint]; //original code is [self.view addSubview:paint];
+    SPView *paint = [[SPView alloc] initWithFrame:nestedView.bounds]; //original code is SPView *paint=[[SPView alloc] initWithFrame:self.view.bounds];
+    [nestedView addSubview:paint]; //original code is [self.view addSubview:paint];
 }
 
 - (void)didReceiveMemoryWarning
